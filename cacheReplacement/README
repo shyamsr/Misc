@@ -1,0 +1,9 @@
+The files cache.c and sim-outorder.c are meant to be used in Simple Scalar 3.0 simulator. The files can be replaced as such. @author: Shyam Ramachandran
+
+The replacement algorithm is based on High Performance Cache Replacement Using Re-Reference Interval Prediction (RRIP): Aamer Jaleel et. al. ISCA 2010.
+
+Thanks to Dr. Austin for creating Simple Scalar (http://www.simplescalar.com/)
+
+TODO: Add directions to use SRRIP and DRRIP
+
+
