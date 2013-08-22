@@ -6,6 +6,11 @@
             Texas A&M University
     Date  : 11/10/25
 
+    Edited  : Shyam S Ramachandran
+              TAMU
+              search "srs_first"
+              
+
 
     This code does the low-level management of kernel-level threads.
     It supports creation of threads and low-level dispatching.
@@ -79,7 +84,7 @@ static void thread_shutdown() {
        This is a bit complicated because the thread termination interacts with the scheduler.
      */
 
-    /* MP4 */
+    /* srs_first */
 
     Thread* curr = Thread::CurrentThread();
     SYSTEM_SCHEDULER->terminate(curr);
@@ -93,7 +98,7 @@ static void thread_shutdown() {
 
 static void thread_start() {
      /* This function is used to release the thread for execution in the ready queue. */
-     /* MP4 */
+     /* srs_first */
      if(!Machine::interrupts_enabled()) {
      	Machine::enable_interrupts(); 
      }
@@ -200,7 +205,7 @@ Thread::Thread(Thread_Function _tf, char * _stack, unsigned int _stack_size) {
 
 }
 /*
-	MP4 : THREAD DESTRUCTOR
+	srs_first : THREAD DESTRUCTOR
 */
 Thread::~Thread() {
 	Thread* curr = Thread::CurrentThread();
